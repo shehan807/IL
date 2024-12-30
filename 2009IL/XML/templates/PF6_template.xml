@@ -1,0 +1,62 @@
+<ForceField>
+<AtomTypes>
+<Type name="opls-800" class="P800" element="P" mass="30.574"/>
+<Type name="opls-801" class="F801" element="F" mass="18.5984"/>
+<Type name="opls-802" class="F802" element="F" mass="18.5984"/>
+<Type name="opls-803" class="F803" element="F" mass="18.5984"/>
+<Type name="opls-804" class="F804" element="F" mass="18.5984"/>
+<Type name="opls-805" class="F805" element="F" mass="18.5984"/>
+<Type name="opls-806" class="F806" element="F" mass="18.5984"/>
+</AtomTypes>
+<Residues>
+<Residue name="PF6">
+<Atom name="P00" type="opls-800"/>
+<Atom name="F01" type="opls-801"/>
+<Atom name="F02" type="opls-802"/>
+<Atom name="F03" type="opls-803"/>
+<Atom name="F04" type="opls-804"/>
+<Atom name="F05" type="opls-805"/>
+<Atom name="F06" type="opls-806"/>
+<Bond from="0" to="1"/>
+<Bond from="0" to="2"/>
+<Bond from="0" to="3"/>
+<Bond from="0" to="4"/>
+<Bond from="0" to="5"/>
+<Bond from="0" to="6"/>
+</Residue>
+</Residues>
+<HarmonicBondForce>
+<Bond class1="P800" class2="F801" length="0.160" k="79500.0"/>
+<Bond class1="P800" class2="F802" length="0.160" k="79500.0"/>
+<Bond class1="P800" class2="F803" length="0.160" k="79500.0"/>
+<Bond class1="P800" class2="F804" length="0.160" k="79500.0"/>
+<Bond class1="P800" class2="F805" length="0.160" k="79500.0"/>
+<Bond class1="P800" class2="F806" length="0.160" k="79500.0"/>
+</HarmonicBondForce>
+<HarmonicAngleForce>
+<Angle class1="F801" class2="P800" class3="F802" angle="1.5707963267949" k="335.0" />
+<Angle class1="F801" class2="P800" class3="F803" angle="1.5707963267949" k="335.0" />
+<Angle class1="F801" class2="P800" class3="F804" angle="1.5707963267949" k="335.0" />
+<Angle class1="F801" class2="P800" class3="F805" angle="1.5707963267949" k="335.0" />
+<Angle class1="F801" class2="P800" class3="F806" angle="3.141592654" k="335.0" />
+<Angle class1="F802" class2="P800" class3="F803" angle="1.5707963267949" k="335.0" />
+<Angle class1="F802" class2="P800" class3="F804" angle="1.5707963267949" k="335.0" />
+<Angle class1="F802" class2="P800" class3="F805" angle="3.141592654" k="335.0" />
+<Angle class1="F802" class2="P800" class3="F806" angle="1.5707963267949" k="335.0" />
+<Angle class1="F803" class2="P800" class3="F804" angle="3.141592654" k="335.0" />
+<Angle class1="F803" class2="P800" class3="F805" angle="1.5707963267949" k="335.0" />
+<Angle class1="F803" class2="P800" class3="F806" angle="1.5707963267949" k="335.0" />
+<Angle class1="F804" class2="P800" class3="F805" angle="1.5707963267949" k="335.0" />
+<Angle class1="F804" class2="P800" class3="F806" angle="1.5707963267949" k="335.0" />
+<Angle class1="F805" class2="P800" class3="F806" angle="1.5707963267949" k="335.0" />
+</HarmonicAngleForce>
+<NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+<Atom type="opls_800" charge="2.3744" sigma="1.00000" epsilon="0.00000"/>
+<Atom type="opls_801" charge="0.3326" sigma="1.00000" epsilon="0.00000"/>
+<Atom type="opls_802" charge="0.3326" sigma="1.00000" epsilon="0.00000"/>
+<Atom type="opls_803" charge="0.3326" sigma="1.00000" epsilon="0.00000"/>
+<Atom type="opls_804" charge="0.3326" sigma="1.00000" epsilon="0.00000"/>
+<Atom type="opls_805" charge="0.3326" sigma="1.00000" epsilon="0.00000"/>
+<Atom type="opls_806" charge="0.3326" sigma="1.00000" epsilon="0.00000"/>
+</NonbondedForce>
+</ForceField>

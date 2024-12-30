@@ -168,6 +168,8 @@ def update_tree(root, parameters, atom_types, force_type):
             angle_elements = f"{element1}-{element2}-{element3}" if element1 <= element3 else f"{element3}-{element2}-{element1}"
             for angle in parameters:
                 ai, aj, ak, angle_value, k, angle_type = angle
+                angle_type = [a[0] for a in angle_type.split("-")]
+                angle_type = "-".join(angle_type)
                 if angle_elements == angle_type:
                     param.set("angle", f"{angle_value:.6f}")
                     param.set("k", f"{k:.6f}")
@@ -178,6 +180,7 @@ def update_tree(root, parameters, atom_types, force_type):
             for dihedral in parameters:
                 ai, aj, ak, al, k1, k2, k3, k4, dihedral_type, is_improper = dihedral
                 dihedral_type_elements = dihedral_type.split("-")
+                dihedral_type_elements = [e[0] for e in dihedral_type_elements]
                 if (dihedral_elements == dihedral_type_elements or
                     dihedral_elements == dihedral_type_elements[::-1]):  # Check reverse match
                     tag = "Improper" if is_improper else "Proper"

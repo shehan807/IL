@@ -1,0 +1,44 @@
+<ForceField>
+<AtomTypes>
+<Type name="opls_800" class="N800" element="N" mass="14.007" />
+<Type name="opls_801" class="C801" element="C" mass="12.011" />
+<Type name="opls_802" class="C802" element="C" mass="12.011" />
+<Type name="opls_803" class="N803" element="N" mass="14.007" />
+<Type name="opls_804" class="N804" element="N" mass="14.007" />
+</AtomTypes>
+<Residues>
+<Residue name="DCA">
+<Atom name="N00" type="opls_800" />
+<Atom name="C01" type="opls_801" />
+<Atom name="C02" type="opls_802" />
+<Atom name="N03" type="opls_803" />
+<Atom name="N04" type="opls_804" />
+<Bond from="0" to="1" />
+<Bond from="0" to="2" />
+<Bond from="1" to="3" />
+<Bond from="2" to="4" />
+</Residue>
+</Residues>
+<HarmonicBondForce>
+<Bond class1="N800" class2="C801" length="0.131000" k="420600.000000" />
+<Bond class1="N800" class2="C802" length="0.131000" k="420600.000000" />
+<Bond class1="C801" class2="N803" length="0.115700" k="543920.000000" />
+<Bond class1="C802" class2="N804" length="0.115700" k="543920.000000" />
+</HarmonicBondForce>
+<HarmonicAngleForce>
+<Angle class1="N800" class2="C801" class3="N803" angle="3.057817" k="425.000000" />
+<Angle class1="N800" class2="C802" class3="N804" angle="3.057817" k="425.000000" />
+<Angle class1="C801" class2="N800" class3="C802" angle="2.068215" k="362.000000" />
+</HarmonicAngleForce>
+<PeriodicTorsionForce>
+<Proper class1="N803" class2="C801" class3="N800" class4="C802" k1="4.080000" k2="0.000000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="N804" class2="C802" class3="N800" class4="C801" k1="4.080000" k2="0.000000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+</PeriodicTorsionForce>
+<NonbondedForce coulomb14scale="0" lj14scale="0">
+<Atom type="opls_800" charge="-0.726200" sigma="0.325000" epsilon="0.711280" />
+<Atom type="opls_801" charge="0.612100" sigma="0.330000" epsilon="0.276144" />
+<Atom type="opls_802" charge="0.612100" sigma="0.330000" epsilon="0.276144" />
+<Atom type="opls_803" charge="-0.749000" sigma="0.320000" epsilon="0.711280" />
+<Atom type="opls_804" charge="-0.749000" sigma="0.320000" epsilon="0.711280" />
+</NonbondedForce>
+</ForceField>

@@ -1,0 +1,43 @@
+<ForceField>
+<AtomTypes>
+<Type name="opls_800" class="B800" element="B" mass="10.411"/>
+<Type name="opls_801" class="F801" element="F" mass="18.5984"/>
+<Type name="opls_802" class="F802" element="F" mass="18.5984"/>
+<Type name="opls_803" class="F803" element="F" mass="18.5984"/>
+<Type name="opls_804" class="F804" element="F" mass="18.5984"/>
+</AtomTypes>
+<Residues>
+<Residue name="BF4">
+<Atom name="B00"  type="opls_800"/>
+<Atom name="F01" type="opls_801"/>
+<Atom name="F02" type="opls_802"/>
+<Atom name="F03" type="opls_803"/>
+<Atom name="F04" type="opls_804"/>
+<Bond from="0" to="1"/>
+<Bond from="0" to="2"/>
+<Bond from="0" to="3"/>
+<Bond from="0" to="4"/>
+</Residue>
+</Residues>
+<HarmonicBondForce>
+<Bond class1="B800" class2="F801" length="0.139" k="121300.0"/>
+<Bond class1="B800" class2="F802" length="0.139" k="121300.0"/>
+<Bond class1="B800" class2="F803" length="0.139" k="121300.0"/>
+<Bond class1="B800" class2="F804" length="0.139" k="121300.0"/>
+</HarmonicBondForce>
+<HarmonicAngleForce>
+<Angle class1="F802" class2="B800" class3="F801" angle="1.91113553093379" k="209.0"/>
+<Angle class1="F803" class2="B800" class3="F801" angle="1.91113553093379" k="209.0"/>
+<Angle class1="F803" class2="B800" class3="F802" angle="1.91113553093379" k="209.0"/>
+<Angle class1="F804" class2="B800" class3="F801" angle="1.91113553093379" k="209.0"/>
+<Angle class1="F804" class2="B800" class3="F802" angle="1.91113553093379" k="209.0"/>
+<Angle class1="F804" class2="B800" class3="F803" angle="1.91113553093379" k="209.0"/>
+</HarmonicAngleForce>
+<NonbondedForce coulomb14scale="0" lj14scale="0">
+<Atom type="opls_800" charge="1.3538" sigma="1.00000" epsilon="0.00000"/>
+<Atom type="opls_801" charge="0.2428" sigma="1.00000" epsilon="0.00000"/>
+<Atom type="opls_802" charge="0.2428" sigma="1.00000" epsilon="0.00000"/>
+<Atom type="opls_803" charge="0.2428" sigma="1.00000" epsilon="0.00000"/>
+<Atom type="opls_804" charge="0.2428" sigma="1.00000" epsilon="0.00000"/>
+</NonbondedForce>
+</ForceField>
