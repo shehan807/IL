@@ -1,22 +1,22 @@
 <ForceField>
 <AtomTypes>
-<Type name="opls-800" class="P800" element="P" mass="30.574" />
-<Type name="opls-801" class="F801" element="F" mass="18.5984" />
-<Type name="opls-802" class="F802" element="F" mass="18.5984" />
-<Type name="opls-803" class="F803" element="F" mass="18.5984" />
-<Type name="opls-804" class="F804" element="F" mass="18.5984" />
-<Type name="opls-805" class="F805" element="F" mass="18.5984" />
-<Type name="opls-806" class="F806" element="F" mass="18.5984" />
+<Type name="opls_800" class="P800" element="P" mass="30.574" />
+<Type name="opls_801" class="F801" element="F" mass="18.5984" />
+<Type name="opls_802" class="F802" element="F" mass="18.5984" />
+<Type name="opls_803" class="F803" element="F" mass="18.5984" />
+<Type name="opls_804" class="F804" element="F" mass="18.5984" />
+<Type name="opls_805" class="F805" element="F" mass="18.5984" />
+<Type name="opls_806" class="F806" element="F" mass="18.5984" />
 </AtomTypes>
 <Residues>
 <Residue name="PF6">
-<Atom name="P00" type="opls-800" />
-<Atom name="F01" type="opls-801" />
-<Atom name="F02" type="opls-802" />
-<Atom name="F03" type="opls-803" />
-<Atom name="F04" type="opls-804" />
-<Atom name="F05" type="opls-805" />
-<Atom name="F06" type="opls-806" />
+<Atom name="P00" type="opls_800" />
+<Atom name="F01" type="opls_801" />
+<Atom name="F02" type="opls_802" />
+<Atom name="F03" type="opls_803" />
+<Atom name="F04" type="opls_804" />
+<Atom name="F05" type="opls_805" />
+<Atom name="F06" type="opls_806" />
 <Bond from="0" to="1" />
 <Bond from="0" to="2" />
 <Bond from="0" to="3" />

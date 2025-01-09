@@ -1,0 +1,89 @@
+<ForceField>
+ <!--created by fftool; mix = g-->
+ <AtomTypes>
+  <Type name="CBT" class="CF" element="C" mass="12.0110" />
+  <Type name="F1" class="FB" element="F" mass="18.9980" />
+  <Type name="SBT" class="SB" element="S" mass="32.0660" />
+  <Type name="NBT" class="NB" element="N" mass="14.0000" />
+  <Type name="OBT" class="OB" element="O" mass="15.9990" />
+ </AtomTypes>
+ <Residues>
+  <Residue name="TF2">
+   <Atom name="C1" type="CBT" charge="0.35" />
+   <Atom name="F1" type="F1" charge="-0.16" />
+   <Atom name="F2" type="F1" charge="-0.16" />
+   <Atom name="F3" type="F1" charge="-0.16" />
+   <Atom name="S1" type="SBT" charge="1.02" />
+   <Atom name="N" type="NBT" charge="-0.66" />
+   <Atom name="O1" type="OBT" charge="-0.53" />
+   <Atom name="O2" type="OBT" charge="-0.53" />
+   <Atom name="S2" type="SBT" charge="1.02" />
+   <Atom name="O3" type="OBT" charge="-0.53" />
+   <Atom name="O4" type="OBT" charge="-0.53" />
+   <Atom name="C2" type="CBT" charge="0.35" />
+   <Atom name="F4" type="F1" charge="-0.16" />
+   <Atom name="F5" type="F1" charge="-0.16" />
+   <Atom name="F6" type="F1" charge="-0.16" />
+    <Bond from="2" to="1" />
+    <Bond from="3" to="1" />
+    <Bond from="4" to="1" />
+    <Bond from="5" to="1" />
+    <Bond from="6" to="5" />
+    <Bond from="7" to="5" />
+    <Bond from="8" to="5" />
+    <Bond from="9" to="6" />
+    <Bond from="10" to="9" />
+    <Bond from="11" to="9" />
+    <Bond from="12" to="9" />
+    <Bond from="13" to="12" />
+    <Bond from="14" to="12" />
+    <Bond from="15" to="12" />
+  </Residue>
+ </Residues>
+ <HarmonicBondForce>
+  <Bond class1="FB" class2="CF" length="0.13230" k="369800.00" />
+  <Bond class1="CF" class2="SB" length="0.18180" k="195000.00" />
+  <Bond class1="NB" class2="SB" length="0.15700" k="313700.00" />
+  <Bond class1="SB" class2="OB" length="0.14370" k="533100.00" />
+ </HarmonicBondForce>
+ <HarmonicAngleForce>
+  <Angle class1="FB" class2="CF" class3="FB" angle="1.86925" k="781.00" />
+  <Angle class1="FB" class2="CF" class3="SB" angle="1.94953" k="694.00" />
+  <Angle class1="NB" class2="SB" class3="CF" angle="1.80642" k="764.00" />
+  <Angle class1="CF" class2="SB" class3="OB" angle="1.79071" k="870.00" />
+  <Angle class1="NB" class2="SB" class3="OB" angle="1.98269" k="789.00" />
+  <Angle class1="OB" class2="SB" class3="OB" angle="2.06822" k="969.00" />
+  <Angle class1="SB" class2="NB" class3="SB" angle="2.19213" k="671.00" />
+ </HarmonicAngleForce>
+ <RBTorsionForce>
+  <Proper class1="NB" class2="SB" class3="CF" class4="FB" c0="0.66100" c1="1.98300" c2="0.00000" c3="-2.64400" c4="0.00000" c5="0.00000" />
+  <Proper class1="OB" class2="SB" class3="CF" class4="FB" c0="0.72550" c1="2.17650" c2="0.00000" c3="-2.90200" c4="0.00000" c5="0.00000" />
+  <Proper class1="SB" class2="NB" class3="SB" class4="CF" c0="4.36900" c1="-21.17900" c2="10.42000" c3="6.39000" c4="0.00000" c5="0.00000" />
+  <Proper class1="OB" class2="SB" class3="NB" class4="SB" c0="-0.00750" c1="-0.02250" c2="0.00000" c3="0.03000" c4="0.00000" c5="0.00000" />
+ </RBTorsionForce>
+ <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+  <UseAttributeFromResidue name="charge" />
+  <Atom type="CBT" sigma="1.0" epsilon="0.0" />
+  <Atom type="F1" sigma="1.0" epsilon="0.0" />
+  <Atom type="SBT" sigma="1.0" epsilon="0.0" />
+  <Atom type="NBT" sigma="1.0" epsilon="0.0" />
+  <Atom type="OBT" sigma="1.0" epsilon="0.0" />
+ </NonbondedForce>
+ <LennardJonesForce lj14scale="0.5">
+  <Atom type="CBT" sigma="0.35000" epsilon="0.27614" />
+  <Atom type="F1" sigma="0.31180" epsilon="0.25540" />
+  <Atom type="SBT" sigma="0.35500" epsilon="1.04600" />
+  <Atom type="NBT" sigma="0.32500" epsilon="0.71128" />
+  <Atom type="OBT" sigma="0.31500" epsilon="0.83736" />
+  <NBFixPair type1="CBT" type2="F1" sigma="0.33034830" epsilon="0.26556761" />
+  <NBFixPair type1="CBT" type2="SBT" sigma="0.35249113" epsilon="0.53744064" />
+  <NBFixPair type1="CBT" type2="NBT" sigma="0.33726844" epsilon="0.44318490" />
+  <NBFixPair type1="CBT" type2="OBT" sigma="0.33203915" epsilon="0.48086234" />
+  <NBFixPair type1="F1" type2="SBT" sigma="0.33269956" epsilon="0.51686401" />
+  <NBFixPair type1="F1" type2="NBT" sigma="0.31833159" epsilon="0.42621698" />
+  <NBFixPair type1="F1" type2="OBT" sigma="0.31339592" epsilon="0.46245188" />
+  <NBFixPair type1="SBT" type2="NBT" sigma="0.33966896" epsilon="0.86255370" />
+  <NBFixPair type1="SBT" type2="OBT" sigma="0.33440245" epsilon="0.93588384" />
+  <NBFixPair type1="NBT" type2="OBT" sigma="0.31996094" epsilon="0.77174958" />
+ </LennardJonesForce>
+</ForceField>
